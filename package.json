@@ -1,0 +1,19 @@
+{
+  "name": "google-forms-builder",
+  "version": "1.0.0",
+  "description": "Build rich Google Forms (checkboxes, linear scales, sections, branching, 'Other') programmatically via the Google Forms API. Includes a reusable toolkit and a real two-track survey as a worked example.",
+  "license": "MIT",
+  "main": "src/formKit.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "get-token": "node get-refresh-token.js",
+    "build:demo": "node examples/ai-usage-survey/build.js",
+    "verify": "node examples/ai-usage-survey/verify.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^126.0.1"
+  }
+}
